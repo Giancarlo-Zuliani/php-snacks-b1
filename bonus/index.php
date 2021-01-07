@@ -9,6 +9,7 @@
   </head>
 
   <body>
+
     <div id="app">
       <div class="box" v-for="hotel in hotels">
         <h1>{{ hotel.name }}</h2>
@@ -21,6 +22,7 @@
         </ul>
       </div>
     </div>
-  <script type="text/javascript" src="script.js"></script>
-</body>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

@@ -3,13 +3,11 @@ var app = new Vue({
   data: {
     hotels: []
   },
-
   mounted: function () {
-    axios
-    .get('data.php')
-    .then(risposta => {
-      this.hotels = risposta.data;
-      console.log(this.hotels);
+    axios.get('data.php')
+      .then(risposta => {
+        this.hotels = risposta.data;
+        console.log(this.hotels);
     });
   },
 })
